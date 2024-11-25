@@ -2,6 +2,19 @@
 
 First approach to creating multi-agent systems using a DSL and open source JASON language. 
 
+## Run Project
+
+Build and download dependencies using gradle with the command.
+
+`jason mas_jason.mas2j`
+
+//TODO: there is a bug running directly this command and fails, temporal after the building and packaging face, you need to run gradle command run.
+
+`gradle run`
+
+This will open a Java Runtime with the Jason application execution.
+
+![Fig 1. Jason Hello World App](./resources/jason-hello-world-app.png)
 
 
 ## Dependencies
@@ -12,6 +25,8 @@ First approach to creating multi-agent systems using a DSL and open source JASON
 - Gradle: `brew install gradle`
 - Jason interpreter:  `/opt/jason-3-2/bin/jason`
 
+
+Press the button Stop to exit the app. 
 ----------
 
 ### References 
