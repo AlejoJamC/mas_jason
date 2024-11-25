@@ -496,7 +496,7 @@ public class ForestEnv extends Environment {
             g.setColor(Color.black);
             
             super.drawString(g, x, y, defaultFont, label);
-            //repaint();
+            repaint();
         }
 
         public void drawGem(Graphics g, int x, int y) {
