@@ -1,8 +1,7 @@
 /*
-   Project mas_jason
+   Project forest
 
    Gradle build file for Jason Application
-   November 25, 2024 - 11:49:23
 */
 
 defaultTasks 'run'
@@ -42,16 +41,16 @@ sourceSets {
 task run (type: JavaExec, dependsOn: 'classes') {
     description 'runs the application'
     mainClass = 'jason.infra.local.RunLocalMAS'
-    args = ['mas_jason.mas2j']
+    args = ['forest.mas2j']
 	// options:
-	//     args = ['mas_jason.mas2j', '--debug', '--no-net', '--empty-mas']
-	//     args = ['mas_jason.mas2j', '--log-conf', 'l.p'] // to use file l.p to configure logging
+	//     args = ['forest.mas2j', '--debug', '--no-net', '--empty-mas']
+	//     args = ['forest.mas2j', '--log-conf', 'l.p'] // to use file l.p to configure logging
     classpath sourceSets.main.runtimeClasspath
 }
 
 task runJade (type: JavaExec, dependsOn: 'classes') {
     description 'runs the application with Jade infrastructure'
     mainClass = 'jason.infra.jade.RunJadeMAS'
-    args = [ 'mas_jason.mas2j' ]
+    args = [ 'forest.mas2j' ]
     classpath sourceSets.main.runtimeClasspath
 }
